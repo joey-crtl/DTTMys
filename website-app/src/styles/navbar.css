@@ -1,0 +1,103 @@
+/* ====== Base Navbar Style ====== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #007a64;
+  color: white;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Left section (menu + logo) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo */
+.navbar-logo {
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+/* Desktop Links */
+.navbar-links {
+  display: flex;
+  gap: 20px;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.navbar-links a:hover {
+  opacity: 0.8;
+}
+
+/* ====== Menu Button ====== */
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ====== Mobile Style ====== */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+    font-size: 1.6rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 16px;
+  }
+
+  .navbar-logo {
+    font-size: 1.1rem;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+  }
+
+  .navbar-links.open {
+    max-height: 500px;
+    opacity: 1;
+  }
+
+  .navbar-links a {
+    padding: 10px 16px;
+    font-size: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .navbar-links a:first-child {
+    border-top: none; 
+  }
+}
