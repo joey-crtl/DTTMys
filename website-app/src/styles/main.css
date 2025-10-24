@@ -899,3 +899,47 @@ footer {
   text-align: center;
   font-weight: bold;
 }
+
+/* ===== MOBILE NAV FIX ===== */
+@media (max-width: 768px) {
+  header {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  .logo-img {
+    height: 50px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 0.8rem;
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+    padding: 0.5rem 1rem;
+  }
+}
