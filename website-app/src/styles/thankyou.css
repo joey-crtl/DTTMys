@@ -1,0 +1,106 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+header {
+  background: #228B73;
+  color: #fff;
+  padding: 0.5rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+.nav-link.active {
+  color: #ffcc00;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.logo-img {
+  height: 60px;
+  width: auto;
+  margin-left: -120px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Syne', sans-serif;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  padding: 1rem;
+  background: #1a6b58;
+}
+.thank-you-section {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 7%;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  background-color: #f2fefb;
+}
+
+.thank-you-box {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 3rem 5rem;
+  max-width: 500px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border: 2px solid #d6f5ec;
+}
+
+.thank-you-icon {
+  font-size: 4rem;
+  color: #28a745;
+  margin-bottom: 1rem;
+}
+
+.thank-you-box h2 {
+  font-size: 2rem;
+  color: #1a6b58;
+  margin-bottom: 1rem;
+}
+
+.thank-you-box p {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0.25rem 0;
+  font-family: 'Syne', sans-serif;
+}
+.thank-you-box .modal-actions {
+  display: flex;
+  justify-content: center; /* centers the button horizontally */
+  margin-top: 2rem;        /* optional spacing from the text */
+}

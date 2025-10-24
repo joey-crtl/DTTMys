@@ -1,0 +1,106 @@
+/* ==========================
+   Details Modal (Improved)
+========================== */
+.details-modal {
+  background: rgba(0, 0, 0, 0.4); /* dim backdrop */
+  position: fixed;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(3px);
+}
+
+.details-modal .modal-content {
+  background: #fff;
+  border-radius: 18px;
+  padding: 2rem 2.5rem;
+  width: 90%;
+  max-width: 700px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  animation: modalFade 0.3s ease;
+}
+
+@keyframes modalFade {
+  from { opacity: 0; transform: scale(0.97); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Header */
+.details-modal h3 {
+  margin-top: 0;
+  color: #228B73;
+  font-size: 1.4rem;
+  font-weight: 700;
+  border-bottom: 2px solid #e8e8e8;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Grid Layout */
+.details-modal .details-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* consistent two-column layout */
+  gap: 1rem 1.5rem;
+  align-items: start;
+}
+
+/* Inputs */
+.details-modal input,
+.details-modal select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.details-modal input:focus,
+.details-modal select:focus {
+  border-color: #228B73;
+  box-shadow: 0 0 0 3px rgba(34, 139, 115, 0.15);
+  outline: none;
+}
+
+.details-modal .form-row:has(input[name="passengers"]) {
+  grid-column: span 2;
+}
+
+/* Actions */
+.details-modal .modal-actions {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.details-modal .modal-actions button {
+  min-width: 120px;
+  padding: 10px 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.details-modal .modal-actions button[type="button"] {
+  background: #e0e0e0;
+  color: #333;
+}
+
+.details-modal .modal-actions button[type="submit"] {
+  background: #228B73;
+  color: #fff;
+}
+
+.details-modal .modal-actions button:hover {
+  opacity: 0.9;
+}
+.details-modal .modal-actions .cancel-btn:hover {
+  background: #e0e0e0;
+}

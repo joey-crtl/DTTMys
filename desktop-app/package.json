@@ -1,0 +1,28 @@
+{
+  "name": "desktop-app",
+  "version": "1.0.0",
+  "description": "Dr. Travel & Tours Reservation System (Electron Desktop App)",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^38.1.2",
+    "electron-reload": "^2.0.0-alpha.1"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.4.1",
+    "@supabase/supabase-js": "^2.58.0",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "firebase": "^12.4.0",
+    "firebase-admin": "^13.5.0",
+    "mongoose": "^8.18.2"
+  }
+}
